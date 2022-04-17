@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+  font-size: 62.5%;
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
+  }
+  
+  body{
+    background-color: #2F3B38;
+    width: 100%;
+    height: 800px;
+  }
+
+#ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: aqua;
+  display: flex;
+  position: absolute;
+}
+
+
+
+
+.container {
+  background-color: #2F3B38;
+  display: inline-block;
+  width: 500px;
+  max-height: 700px;
+  padding: 10px;
+  border: 5px dashed #0c0e0d;
+  position: absolute;
+  top:200px;
+  left: 400px;
+  z-index: 3;
+ 
+  
+}
+
+.container .title {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  font-size: 25px;
+}
+.container #description {
+  font-size: 18px;
+}
+.container-form{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px ;
+}
+.container .form {
+  font-size: 25px;
+  height: 30px;
+  margin:0 auto ;
+}
+.container .form .field {
+  font-size: 22px;
+  font-weight: 700;
+}
+.container .form .guessField {
+  border-radius: 25px;
+  height: 30px;
+  padding-left: 10px;
+  width: 100px;
+  font-size: 18px;
+
+}
+.container .form .guessSubmit {
+  height: 25px;
+  border-radius: 10px;
+  padding: 3px;
+  
+
+  font-weight: 700;
+  letter-spacing: 2px;
+  
+}
+.container .resultParas{
+  font-size: 18px;
+}
+ .container .resultParas .paras{
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px 0;
+} 
+
+
+.container .lastResult {
+  text-align: center;
+    color: white;
+    padding: 3px;
+  }
