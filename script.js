@@ -16,7 +16,8 @@
 
 //Scrip de las bolas
 
-document.getElementById('ball').addEventListener('mouseover', moviBall);
+// document.getElementById('ball').addEventListener('mouseover', moviBall);
+onload = moviBall;
 
 function moviBall (){
   let randomTop = Math.floor(Math.random() * 800);
