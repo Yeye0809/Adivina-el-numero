@@ -14,21 +14,36 @@
 //     alert("Soy un marcador de posición") ;
 //   }
 
+
+
+
+
 //Scrip de las bolas
 
 // document.getElementById('ball').addEventListener('mouseover', moviBall);
-onload = moviBall;
+//onload = addBalls;
 
-function moviBall (){
-  let randomTop = Math.floor(Math.random() * 800);
-  let randomLetf = Math.floor(Math.random() * 800);
+//setInterval(addBalls, 3000)
 
-  document.getElementById('ball').style.top = randomTop +'px';
-  document.getElementById('ball').style.left = randomLetf +'px';
-}
+   let newBall = document.createElement("div");
+   newBall.setAttribute("class","ball")
+   document.body.append(newBall);
+   let randomTop = Math.floor(Math.random() * 800);
+   let randomLetf = Math.floor(Math.random() * 800);
+ 
+   newBall.style.top = randomTop +'px';
+   newBall.style.left = randomLetf +'px';
+ 
 
+setInterval(moviBall, 2000);
 
+ function moviBall (){
+   let randomTop = Math.floor(Math.random() * 800);
+   let randomLetf = Math.floor(Math.random() * 800);
 
+   newBall.style.top = randomTop +'px';
+   newBall.style.left = randomLetf +'px';
+ }
 
 /// Scrip del juego
 
@@ -44,6 +59,7 @@ const main = document.querySelector('.container')
 
 let guessCount = 1;
 let resetButton;
+
 
 function checkGuess() {
   let userGuess = Number(guessField.value); //se aseura que sea un valor numerico
@@ -74,6 +90,7 @@ function checkGuess() {
   guessField.value = '';
   guessField.focus();
 }
+
 guessSubmit.addEventListener('click', checkGuess);
 function setGameOver() {
   guessField.disabled = true;
