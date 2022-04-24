@@ -1,49 +1,13 @@
-// let randomNumber = Math.floor(Math.random() * 100) + 1;
+setInterval(moviBall, 1500);
 
-// const guesses = document.querySelector('.guesses');
-// const lastResult = document.querySelector('.lastResult');
-// const lowOrHi = document.querySelector('.lowOrHi');
+   function moviBall (){
+    ball = document.querySelector('.ball')
+    let randomTop = Math.floor(Math.random() * 800);
+    let randomLetf = Math.floor(Math.random() * 800);
 
-// const guessSubmit = document.querySelector('.guessSubmit');
-// const guessField = document.querySelector('.guessField');
-
-// let guessCount = 1;
-// let resetButton;
-
-// function checkGuess() {
-//     alert("Soy un marcador de posición") ;
-//   }
-
-
-
-
-
-//Scrip de las bolas
-
-// document.getElementById('ball').addEventListener('mouseover', moviBall);
-//onload = addBalls;
-
-//setInterval(addBalls, 3000)
-
-   let newBall = document.createElement("div");
-   newBall.setAttribute("class","ball")
-   document.body.append(newBall);
-   let randomTop = Math.floor(Math.random() * 800);
-   let randomLetf = Math.floor(Math.random() * 800);
- 
-   newBall.style.top = randomTop +'px';
-   newBall.style.left = randomLetf +'px';
- 
-
-setInterval(moviBall, 2000);
-
- function moviBall (){
-   let randomTop = Math.floor(Math.random() * 800);
-   let randomLetf = Math.floor(Math.random() * 800);
-
-   newBall.style.top = randomTop +'px';
-   newBall.style.left = randomLetf +'px';
- }
+    ball.style.top = randomTop +'px';
+    ball.style.left = randomLetf +'px';
+  }
 
 /// Scrip del juego
 
@@ -62,7 +26,7 @@ let resetButton;
 
 
 function checkGuess() {
-  let userGuess = Number(guessField.value); //se aseura que sea un valor numerico
+  let userGuess = Number(guessField.value); //se asegura que sea un valor numerico
   if (guessCount === 1) {
     guesses.textContent = 'Intentos anteriores: '; 
   }

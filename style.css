@@ -19,21 +19,11 @@ html {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: aqua;
+  background-color: rgb(11, 66, 66);
   display: flex;
   position: absolute;
   transition: all 0.3s ;
 }
-
-#newBall {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: aqua;
-  display: flex;
-  position: absolute;
-}
-
 
 .container {
   background-color: #2F3B38;
